@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border-radius: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800px;    
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "header header"
+        "hobbies inspiration";
+    margin: 10px;
+}
+
+.header {
+    background-color: lightblue;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 20px;
+    height: 600px;
+}
+
+.hobbies {
+    background-color: lightblue;
+    grid-area: hobbies;
+    border-radius: 20px;
+    height: 400px;
+}
+
+.inspiration {
+    background-color: lightblue;
+    grid-area: inspiration;
+    border-radius: 20px;
+    min-height: 400px;
+}
+
+.picture-div {
+    width: 500px;
+    min-height: 300px;
+    line-height: 33px;
+}
+
+img {
+    border-radius: 50%;
+    margin: 140px 90px;
+}
+
+.intro-div {
+   width: 830px;
+   min-height: 600px;
+}
+
+.intro-div  h1 {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.intro-div p {
+    padding: 5px;
+    min-height: 600px;
+    line-height: 24px;
+    text-align: justify;
+    font-size: 16px;
+        
+}
+
+.hobbies-div {
+    margin-top: 8px;
+    margin-left: 20px;
+    height: 330px;
+}
+
+.hobbies  h1 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.hobbies ul li { 
+  font-size: 16px;
+}
+
+.insp-div {
+    margin-top: 8px;
+    margin-left: 30px;
+    height: 330px;
+}
+
+.inspiration  h1 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.insp-div p {
+    line-height: 30px;
+}
+
+
+@media(max-width: 700px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+}
+
+
